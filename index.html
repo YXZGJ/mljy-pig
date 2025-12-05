@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>测测你是不是猪</title>
+  <title>👁️👁️👁️👁️👁️👁️👁️</title>
   <!-- Tailwind CSS v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -13,9 +13,9 @@
       theme: {
         extend: {
           colors: {
-            primary: '#FFB6C1', // 浅粉色
-            secondary: '#F5F5F5', // 浅灰色
-            accent: '#FF69B4', // 亮粉色
+            primary: '#B22222',   // firebrick red (main red)
+            secondary: '#8A0303', // deep blood red
+            accent: '#FF4500',    // orange-red (bright accent)
           },
           fontFamily: {
             sans: ['Arial Rounded MT Bold', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
@@ -122,7 +122,7 @@
   <div class="container max-w-md mx-auto text-center">
     <!-- 标题 -->
     <h1 class="text-4xl md:text-5xl font-bold mb-6 text-primary text-shadow-lg">
-      测测你是不是猪 <span class="text-accent">🐷</span>
+      <p style="color: red;">👁️@&¥（@—克—#*#👁️鲁*！#赞美！！👁️！！｜…%¥ <span class="text-accent">🐙👁️</span></p>
     </h1>
     
     <!-- 主内容区 -->
@@ -158,7 +158,7 @@
           <!-- 长按提示 -->
           <div id="press-hint" class="press-hint">
             <div class="text-5xl mb-2">👇</div>
-            <p class="text-lg text-gray-600">长按这里测试</p>
+            <p class="text-lg text-gray-600" style="color: red;">&#%¥）%》《？！｜」「¥%%</p>
           </div>
           
           <!-- 进度文本 -->
@@ -168,8 +168,8 @@
         </div>
         
         <!-- 提示文字 -->
-        <p id="instruction" class="text-gray-600 mt-6">
-          长按屏幕中间区域，看看你是什么猪！
+        <p id="instruction" class="text-gray-600 mt-6" style="color: red;">
+          @&！开&！——「始“》】——&测〉！～%——试？？—｜
         </p>
       </div>
       
@@ -177,25 +177,21 @@
       <div id="result-area" class="hidden">
         <div class="bg-primary/10 rounded-2xl p-6 flex flex-col items-center justify-center h-64 mb-6">
           <img id="result-emoji" class="w-24 h-24 mb-4 float-animation" src="image/pig.png" alt="猪">
-          <h2 id="result-title" class="text-2xl font-bold text-gray-800 mb-2">猪</h2>
-          <p id="result-description" class="text-gray-600">
-            你是一只可爱的小猪猪！
-          </p>
+          <h2 id="result-title" class="text-2xl font-bold text-gray-800 mb-2"></h2>
+         
         </div>
         
         <button id="retest-button" class="hidden bg-primary text-white py-2 px-6 rounded-full font-medium mb-4 hover:bg-primary/80 transition-colors">
-          重新测试
+          👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️👁️‍🗨️
         </button>
         
-        <p class="text-gray-500 text-sm">
-          提示：结果已保存，刷新不会改变哦！
-        </p>
+        
       </div>
     </div>
     
     <!-- 页脚 -->
     <footer class="text-gray-500 text-sm">
-      <p>作者：nanan <span class="text-primary">🐽</span></p>
+      <p style="color: red;">夜行者果决为你定制awa <span class="text-primary">👁️‍🗨️</span></p>
     </footer>
   </div>
 
@@ -263,7 +259,7 @@
       // 显示进度条
       progressText.classList.remove('hidden');
       pressHint.classList.add('hidden');
-      instruction.textContent = '正在测试中...';
+      instruction.textContent = '不可》｜！名状&……&%&观察中....👁️‍🗨️👁️‍🗨️👁️‍🗨️';
       
       // 开始更新进度条
       progressInterval = setInterval(updateProgress, 30);
@@ -286,7 +282,7 @@
       
       // 恢复视觉效果
       testArea.classList.remove('scale-105');
-      instruction.textContent = '将手指放到屏幕中间区域，长按汲取猪元素';
+      instruction.textContent = '将手%@……#赞美牠～）！…………指放到屏幕*#——》赞美牠？？？-中间区域，赞美牠！！！';
     }
     
     // 更新进度条
@@ -339,7 +335,7 @@
         alert('生成结果失败，请重试！');
         // 重置界面
         resetProgress();
-        instruction.textContent = '长按屏幕中间区域，看看你是什么猪！';
+        instruction.textContent = '将手%@……#赞美牠～）！…………指放到屏幕*#——》赞美牠？？？-中间区域，赞美牠！！！';
       }
     }
     
@@ -359,7 +355,7 @@
       // 添加图片加载失败处理
       resultEmoji.onerror = function() {
         // 如果图片加载失败，使用默认图片
-        resultEmoji.src = 'image/pig.png';
+        resultEmoji.src = 'image/mljy.png';
       };
       
       // 添加结果出现动画
@@ -422,7 +418,7 @@
         resultArea.classList.add('hidden');
         
         // 重置提示文字
-        instruction.textContent = '长按屏幕中间区域，看看你是什么猪！';
+        instruction.textContent = '将手%@……#赞美牠～）！…………指放到屏幕*#——》赞美牠？？？-中间区域，赞美牠！！！';
       } catch (error) {
         console.error('重新测试失败:', error);
       }
