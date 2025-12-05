@@ -232,7 +232,7 @@
     progressCircle.style.strokeDashoffset = circumference;
     
     // 检查是否已有结果
-    let savedResult = null;
+    /*let savedResult = null;
     try {
       savedResult = localStorage.getItem('pigTestResult');
       if (savedResult) {
@@ -244,6 +244,7 @@
       localStorage.removeItem('pigTestResult');
       savedResult = null;
     }
+      */
     
     // 长按开始事件
     function handleHoldStart(e) {
@@ -251,7 +252,7 @@
       e.preventDefault();
       
       // 如果已有结果，不执行任何操作
-      if (localStorage.getItem('pigTestResult')) return;
+      //if (localStorage.getItem('pigTestResult')) return;
       
       isHolding = true;
       startTime = Date.now();
@@ -272,9 +273,8 @@
     // 长按结束事件
     function handleHoldEnd() {
       // 如果已有结果，不执行任何操作
-      if (localStorage.getItem('pigTestResult')) {
-        localStorage.removeItem('pigTestResult');
-      }
+      //if (localStorage.getItem('pigTestResult')) return;
+      
       
       
       isHolding = false;
@@ -329,7 +329,7 @@
         const result = pigResults[0];
         
         // 保存结果到本地存储
-        localStorage.setItem('pigTestResult', JSON.stringify(result));
+        //localStorage.setItem('pigTestResult', JSON.stringify(result));
         
         // 显示结果
         showResult(result);
@@ -411,7 +411,7 @@
     function handleRetest() {
       try {
         // 清除本地存储结果
-        localStorage.removeItem('pigTestResult');
+        //localStorage.removeItem('pigTestResult');
         
         // 重置进度条
         resetProgress();
